@@ -1,0 +1,7 @@
+<section class="sent-successfully" *ngIf="!showNewTopic">
+    <h3 class="sent-successfully__title">Seu tópico foi enviado com sucesso! :D</h3>
+    <p class="sent-successfully__thanks">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+    <a class="sent-successfully__another-jobs">Descubra outros trabalhos!</a>
+    <a class="sent-successfully__create-new-topic" (click)="createNewTopic()">criar novo tópico</a>
+</section>
+<app-new-topic-component *ngIf="showNewTopic"></app-new-topic-component>

@@ -1,0 +1,31 @@
+<section class="discussion">
+    <h2 class="discussion-title">discussões</h2>
+    <div class="discussion-forum">
+        <section class="discussion-share" *ngIf="!showCreateNewTopic">
+            <h2 class="discussion-share__title">Compartilhe suas ideias ou dúvidas com os autores!</h2>
+            <div class="discussion-share__images">
+                <img class="discussion-share__images-hand" src="../../../assets/hand.svg">
+                <img class="discussion-share__images-qa" src="../../../assets/qa.svg">
+                <img class="discussion-share__images-idea" src="../../../assets/idea.svg">
+            </div>
+            <p class="discussion-share__paragraph">
+                Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+                questionamentos ou sugestões para o autor!
+            </p>
+            <a class="btn-create-topic" (click)="createNewTopic()">
+                <mat-icon>add</mat-icon>
+                criar tópico
+            </a>
+        </section>
+        <app-new-topic-component *ngIf="showCreateNewTopic"></app-new-topic-component>
+    </div>
+    <div class="discussion-ask">
+        <div *ngFor="let _ of [].constructor(waitingCount); let i = index">
+            <app-waiting-feedback-component></app-waiting-feedback-component>
+        </div>
+        <app-ask-component></app-ask-component>
+        <div class="answered-topic">
+            <app-ask-component [answerReceived]="answer"></app-ask-component>
+        </div>
+    </div>
+</section>

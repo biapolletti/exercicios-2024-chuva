@@ -1,0 +1,83 @@
+.details {
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    color: #5C5C5C;
+    font-family: Quicksand, 'sans-serif';
+    width: 253px;
+}
+
+.details-title {
+    background-color: #FDF1EB;
+    border-bottom: 1px solid #ECECEC;
+    color: #4E4E4E;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.details-title, .details-content {
+    padding-left: 15px;
+}
+
+.details-content__info p {
+    font-size: 13px;
+}
+
+.details-content {
+    overflow-y: scroll;
+}
+
+.details-content::-webkit-scrollbar {
+    height: 100%;
+    width: 5px;
+}
+
+.details-content::-webkit-scrollbar-track {
+    background-color: #E7E7E7;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.details-content::-webkit-scrollbar-button:vertical:start:decrement {
+    background-color: #BFBFBF;
+    border-radius: 5px; 
+    height: 50%;
+}
+
+.details-content__info p {
+    margin: 0;
+}
+
+.authors-title {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.authors-list {
+    margin-top: 0;
+}
+
+.universities-list {
+    margin-top: 40px;
+}
+
+.authors-list__item {
+    font-size: 14px;
+}
+
+.universities-list__item {
+    color: #725C5C;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.authors-list__item > sup, .universities-list__item > sup {
+    font-size: 8px;
+}
+
+.authors-list, .universities-list {
+    list-style: none;
+    padding: 0;
+}

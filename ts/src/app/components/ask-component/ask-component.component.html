@@ -1,0 +1,21 @@
+<article class="ask" [ngClass]="{'remove-border-margin': showAnswers}">
+    <h4 class="ask-title ops-topic-subject" (click)="viewAnswers()">Assunto da pergunta aparece aqui</h4>
+    <p class="ask-author">Carlos Henrique Santos</p>
+    <p class="ask-description">
+        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+        de processo formativo processo...
+    </p>
+    <div class="ask-info">
+        <a class="ask-info__link-more-info">
+            <mat-icon class="more-info-icon">more_vert</mat-icon>
+        </a>
+        <a class="ask-info__link-heart">
+            <mat-icon class="heart-icon" (click)="like()">favorite</mat-icon>
+        </a>
+        <a class="ask-info__like">{{ likes }} like</a>
+        <a class="ask-info__answer" (click)="viewAnswers()">{{ answerReceived }} <span *ngIf="answerReceived === 1">resposta</span><span *ngIf="answerReceived > 1">respostas</span></a>
+    </div>
+</article>
+<div class="comments-container">
+    <app-answer-component *ngIf="showAnswers"></app-answer-component>
+</div>

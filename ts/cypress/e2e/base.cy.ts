@@ -1,6 +1,7 @@
 describe('checa elementos básicos', () => {
   beforeEach(() => {
     cy.visit('http://localhost:4200/');
+    cy.viewport(1920, 1080);
   });
 
   it('titulo do trabalho existe', () => {
@@ -10,6 +11,11 @@ describe('checa elementos básicos', () => {
 
   it('botão de expandir resumo existe', () => {
     cy.get('.btn-show-more').contains('ver mais');
+    cy.compareSnapshot('Trabalho - Resumo expandido');
+  });
+
+  it('clicar em `ver mais` exibe o resumo completo', () => {
+    cy.get('.btn-show-more').click();
     cy.compareSnapshot('Trabalho - Resumo expandido');
   });
 

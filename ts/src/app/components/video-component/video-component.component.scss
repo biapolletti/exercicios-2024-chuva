@@ -1,0 +1,46 @@
+.video {
+    background-color: rgba(141, 53, 6, 0.50);
+    background-blend-mode: multiply;
+    background-image: url('../../../assets/video.jpg');
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    padding: 30px 35px;
+    width: 713px;
+}
+
+.video-titulo {
+    font-size: 1.9em;
+}
+
+.video-info {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.video-info__imagem {
+    border: 1px solid #ED7839;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.descricao-titulo {
+    font-size: 2.7em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.descricao-paragrafo {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.descricao-titulo, .descricao-paragrafo {
+    margin: 10px;
+}

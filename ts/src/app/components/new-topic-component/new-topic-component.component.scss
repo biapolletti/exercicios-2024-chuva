@@ -1,0 +1,74 @@
+.new-topic__doubt {
+    color: #5C5C5C;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.new-topic__form {
+    align-items: start;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: #ED7839;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subject {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.content {
+    border-bottom: 0;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    border-radius: 3px 3px 0 0; 
+    height: 82px;
+    resize: none;
+}
+
+.subject, .content {
+    box-sizing: border-box;
+    color: #4D4D4D;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.form-div-submit {
+    background-color: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    height: 31px;
+    margin-bottom: 19px;
+    text-align: right;
+    width: 100%;
+}
+
+.form-submit {
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 100%;
+    padding: 0 80px;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+}
+
+.form-submit, .subject, .content {
+    outline: none;
+}

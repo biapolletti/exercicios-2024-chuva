@@ -1,0 +1,13 @@
+<section class="new-topic" *ngIf="!showSentSuccessfully">
+    <p class="new-topic__doubt">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+    <form class="new-topic__form">
+        <label class="form-label" for="subject">Assunto</label>
+        <input class="subject" name="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+        <label class="form-label" for="content">Conteúdo</label>
+        <textarea class="content" name="content"></textarea>
+        <div class="form-div-submit">
+            <button class="form-submit" (click)="validateNewTopic()">Enviar</button>
+        </div>
+    </form>
+</section>
+<app-sent-successfully-component *ngIf="showSentSuccessfully"></app-sent-successfully-component>

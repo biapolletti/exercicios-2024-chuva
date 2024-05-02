@@ -1,0 +1,27 @@
+<section class="details">
+    <h2 class="details-title">detalhes</h2>
+    <div class="details-content">
+        <div class="details-content__info">
+            <p>Tipo de Apresentação: <strong>Pôster</strong></p>
+            <p>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
+            <p>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+        </div>
+        <div class="details-content__authors">
+            <h3 class="authors-title">authors:</h3>
+            <ul class="authors-list">
+                <li class="authors-list__item" *ngFor = "let author of authors">
+                    {{ author.name }}
+                    <sup>{{ author.id }}</sup>
+                </li>
+            </ul>
+        </div>
+        <div class="details-content__university">
+            <ul class="universities-list">
+                <li class="universities-list__item" *ngFor = "let university of universities">
+                    <sup>{{ university.id }}</sup>
+                    {{ university.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
